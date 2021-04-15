@@ -6,13 +6,13 @@ import Reading from "./Reading";
 import Questions from "./Questions";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../myStyles.css";
+import "../Styles/myStyles.css";
 
 function QuizPage(props) {
   return (
     <Container className="quizpagepadding">
       <Row>
-        <Col className="p-50" xs={5} >
+        <Col className="p-50" xs={5}>
           <Jumbotron className="reading">
             <Reading />
           </Jumbotron>

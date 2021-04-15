@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Jumbotron } from "react-bootstrap";
 import IncorrectQuestions from "./IncorrectQuestions";
-import "../myStyles.css";
+import "../Styles/myStyles.css";
 
 function QuizResults(props) {
   if (props.userScore >= 0 && props.userScore !== props.totalQuestions) {
@@ -17,8 +17,8 @@ function QuizResults(props) {
             <br></br>
             <h3>
               You answered {props.userScore}/{props.totalQuestions} or{" "}
-              {Math.floor((props.userScore / props.totalQuestions) * 100)}% of the questions
-              correct.{" "}
+              {Math.floor((props.userScore / props.totalQuestions) * 100)}% of
+              the questions correct.{" "}
             </h3>
             <br></br>
           </Jumbotron>
@@ -42,7 +42,7 @@ function QuizResults(props) {
         </Row>
       </Container>
     );
-  } else if (props.userScore === props.totalQuestions){
+  } else if (props.userScore === props.totalQuestions) {
     return (
       <Container className="quizresults">
         <Row>
@@ -53,16 +53,15 @@ function QuizResults(props) {
             <br></br>
             <h3>
               You answered {props.userScore}/{props.totalQuestions} or{" "}
-              {Math.floor((props.userScore / props.totalQuestions) * 100)}% of the questions
-              correct.{" "} Good job!
+              {Math.floor((props.userScore / props.totalQuestions) * 100)}% of
+              the questions correct. Good job!
             </h3>
             <br></br>
           </Jumbotron>
         </Row>
       </Container>
-    )
-
-  }else{
+    );
+  } else {
     return (
       <Container className="gotoquizpage">
         <Jumbotron className="results text-center">

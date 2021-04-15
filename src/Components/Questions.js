@@ -11,7 +11,6 @@ function Questions(props) {
   const answers = questions ? questions.answerOptions : null;
   const nextQuestion = currentQuestion + 1;
 
-
   function selectedAnswer(param) {
     if (param.isCorrect) {
       let aVar = incrementScore(props.userScore);
@@ -34,7 +33,6 @@ function Questions(props) {
     return newScore;
   }
 
-  //if necessary return a redirect (if no next question)
   if (answers != null) {
     return (
       <Col>

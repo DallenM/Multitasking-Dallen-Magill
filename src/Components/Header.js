@@ -2,7 +2,7 @@ import "../Styles/Header.css";
 import { Col } from "react-bootstrap";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import React from "react";
-import "../myStyles.css";
+import "../Styles/myStyles.css";
 
 function TitleBlock() {
   return (
@@ -21,24 +21,22 @@ function Header() {
           style={{ alignContent: "center" }}
           className="toppadding15px centerandfitbreadcrumb"
         >
-          <Breadcrumb.Item className="whitetext" href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item className="whitetext" href="/Quiz">Quiz Page</Breadcrumb.Item>
-          <Breadcrumb.Item className="whitetext" href="/QuizScore">Quiz Results</Breadcrumb.Item>
+          <Breadcrumb.Item className="whitetext" href="/">
+            Home
+          </Breadcrumb.Item>
+          <Breadcrumb.Item className="whitetext" href="/Quiz">
+            Quiz Page
+          </Breadcrumb.Item>
+          <Breadcrumb.Item className="whitetext" href="/QuizScore">
+            Quiz Results
+          </Breadcrumb.Item>
         </Breadcrumb>
       </Col>
       <Col className="verticalpadding15px">
-        <TitleBlock/>
+        <TitleBlock />
       </Col>
       <Col></Col>
     </React.Fragment>
-
-    // <Container>
-    //   <Col>
-    //   </Col>
-    //   <Col>
-    //     <TitleBlock />
-    //   </Col>
-    // </Container>
   );
 }
 

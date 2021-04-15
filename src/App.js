@@ -9,7 +9,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./myStyles.css";
+import "./Styles/myStyles.css";
 import { Container, Row } from "react-bootstrap";
 import { useState } from "react";
 
@@ -21,14 +21,14 @@ function App() {
   return (
     <Router>
       <Container className="p-0 min-vh-100 d-flex flex-column" fluid>
-        <Row
-          className="flex-grow-0 flex-shrink-0 shadow-sm margins0 header"
-          // style={{ backgroundColor: "#242582", color: "white" }}
-        >
+        <Row className="flex-grow-0 flex-shrink-0 shadow-sm margins0 header">
           <Header />
         </Row>
-        <Row md="auto" className="justify-content-md-center flex-grow-1 introandresultsbackground">
-          <Switch basename='/'>
+        <Row
+          md="auto"
+          className="justify-content-md-center flex-grow-1 introandresultsbackground"
+        >
+          <Switch basename="/">
             <Route path="/QuizScore">
               <QuizResults
                 userScore={userScore}

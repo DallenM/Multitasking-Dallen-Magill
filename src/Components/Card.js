@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
 export default function NewCard(props) {
-    let question = props.questions;
+  let question = props.questions;
 
   return (
     <Card style={{ width: "18rem" }}>

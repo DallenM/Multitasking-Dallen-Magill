@@ -26,12 +26,12 @@ function IncorrectQuestions(props) {
       <Card>
         <Card.Body>
           <Card.Title>{props.questions.questionText}</Card.Title>
-            <ListGroup className="height100">
-              {highlightCorrect(props.questions.answerOptions[0])}
-              {highlightCorrect(props.questions.answerOptions[1])}
-              {highlightCorrect(props.questions.answerOptions[2])}
-              {highlightCorrect(props.questions.answerOptions[3])}
-            </ListGroup>
+          <ListGroup className="height100">
+            {highlightCorrect(props.questions.answerOptions[0])}
+            {highlightCorrect(props.questions.answerOptions[1])}
+            {highlightCorrect(props.questions.answerOptions[2])}
+            {highlightCorrect(props.questions.answerOptions[3])}
+          </ListGroup>
         </Card.Body>
       </Card>
     </Col>

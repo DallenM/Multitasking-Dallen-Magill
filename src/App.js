@@ -28,15 +28,15 @@ function App() {
           <Header />
         </Row>
         <Row md="auto" className="justify-content-md-center flex-grow-1 introandresultsbackground">
-          <Switch>
-            <Route path="Multitasking-Dallen-Magill/QuizScore">
+          <Switch basename='/'>
+            <Route path="/QuizScore">
               <QuizResults
                 userScore={userScore}
                 totalQuestions={totalQuestions}
                 correctQuestions={correctQuestions}
               />
             </Route>
-            <Route path="Multitasking-Dallen-Magill/Quiz">
+            <Route path="/Quiz">
               <QuizPage
                 userScore={userScore}
                 setUserScore={setUserScore}
@@ -44,7 +44,7 @@ function App() {
                 correctQuestions={correctQuestions}
               />
             </Route>
-            <Route path="/Multitasking-Dallen-Magill">
+            <Route path="/">
               <QuizIntro />
             </Route>
           </Switch>

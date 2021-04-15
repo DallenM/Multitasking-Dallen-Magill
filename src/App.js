@@ -44,7 +44,7 @@ function App() {
                 correctQuestions={correctQuestions}
               />
             </Route>
-            <Route path="/">
+            <Route path="">
               <QuizIntro />
             </Route>
           </Switch>

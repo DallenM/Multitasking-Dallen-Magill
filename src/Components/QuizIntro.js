@@ -14,7 +14,7 @@ function QuizIntro(props) {
               <Card.Title>Instructions</Card.Title>
               <Card.Text>
                 This is a quiz to assess your ability to read a paragraph and
-                answer questions. When you are ready, press Next and you will be
+                answer questions. When you are ready, press Begin and you will be
                 taken to the next page to begin the quiz.
               </Card.Text>
               <Button href="/Quiz">Begin</Button>

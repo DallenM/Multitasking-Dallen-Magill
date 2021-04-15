@@ -1,3 +1,16 @@
+Hey, this is Dallen.
+I created this app as a starting point to gather research about people's ability to multitask.  The current version will act as a control to test people's normal reading comprehension without any distraction.  Next, I will be doing a very similar app that has music playing in the background.
+
+This is a simple looking app but it did help me learn a ton about React, JavaScript, JSX, HTML, React-Bootstrap, CSS and coding principles in general. Here are a few of the features I am most proud of in this project:
+React Routing: I have used Routing before in a previous project but never as in depth as this.  I have a Breadcrumb navbar on the top of all pages that allows you to move throughout the app easily. There's a Begin button on the first page that takes you to the quiz when pressed. I have a Switch in the main App.js which catches all of the URL changes and puts up the page that matches.  This is really cool and took me a little while to wrap my head around but I got it working nicely.  I have a Redirect call on the last quiz question which automatically moves you to the results page.
+Complex State handling: I don't know how complex it will look to a more experienced programmer but this too a lot of effort to figure out. I used React State Hooks throughout my project but the one I am most proud of is the state array declared in App.js that keeps track of the questions that the user gets wrong. I had a feeling that it was possible to store an array in state but I had never done it before.  I found many different tutorials online that were extremely helpful and eventually after many hours I figured it out.  This is how I am displaying the cards in the Quiz Results page that show the highlighted answers and whether they were correct or wrong.
+Custom JSON Document: I got help from Professor Liddle with the basic formatting of my JSON document but I am proud of the fact that I was able to figure out how to pull data from this JSON document without any aid from Google or other people.  I feel very accomplished that I have a dynamic web page that can use any story and any set of questions that you put into the JSON file to quiz users on reading comprehension.
+
+This project was a big learning experience for me.  Moving forward, I will have a much better understanding of state and props, react state hooks, React Boostrap components and how they can be useful, BrowserRouting from react-router, and overall a much higher confidence that I can make an app from scratch by myself.  It is a very fulfilling thing to look at a project you created and think back to when it was just a sketch on a piece of paper.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
